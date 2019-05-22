@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color : darkgray;
+            text-align: center;
+            font-size: 100px;
+            margin: 50px 0px 30px 0px;
+        }
+        a{
+            font-style: italic;
+            color : darkgray;
+        }
+        p{
+            color: darkgray;
+            text-align: center;
+            margin : 100px;
+        }
+    </style>
+    <title>ABOUT</title>
+</head>
+
+<body>
+    <div class="container">
+    <h1><a href="{%url 'home'%}">WORD COUNTER</a></h1>
+        
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="{%url 'home'%}" style="font-size: 30px">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{%url 'about'%}" style="font-size: 30px">ABOUT</a>
+        </li>
+    </ul>
+        
+    <p>안녕하세요. <br>
+        WORD COUNTER는 문장을 공백 기준으로 나누어 세 주는 페이지입니다. <br> 
+        WORD COUNTER에서 문장을 입력하세요. 
+        <br><br><br><br><br>
+        <a href="{%url 'home'%}" style="font-size: 20px;">WORD COUNTER 시작하기</a>
+    </p>
+    </div>
+</body>
+</html>
